@@ -1,53 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>J-Sci Archive トップページ</title>
-    <style>
-        body {
-            font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
-            margin: 2em;
-            background-color: #f4f6f8;
-            color: #222;
-        }
-        h1 {
-            color: #0077aa;
-        }
-        h2 {
-            color: #005577;
-            margin-top: 1.5em;
-        }
-        ul {
-            line-height: 1.8;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>J-Sci Archive - トップページ</title>
+  <style>
+    body {
+      font-family: 'Yu Gothic', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1em 2em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav a {
+      color: white;
+      margin-right: 1.5em;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2em;
+    }
+    .highlight {
+      background-color: #eef2f5;
+      padding: 1em;
+      border-left: 4px solid #003366;
+      margin-bottom: 2em;
+    }
+    .categories h2 {
+      margin-top: 2em;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+    .grid a {
+      background: white;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      flex: 1 0 200px;
+      text-align: center;
+      text-decoration: none;
+      color: #003366;
+    }
+    .grid a:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
+  <header>
     <h1>J-Sci Archive</h1>
-    <p>日本語による科学知の永続的保存と自由な発信を目的とした独立型研究アーカイブ。</p>
-    <p>このプロジェクトは、英語中心の学術出版からこぼれ落ちがちな日本語による研究成果や理論提案、学際的な思索を、自由に発表・保存するための試みです。</p>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="papers.html">論文一覧</a>
+      <a href="category_index.html">カテゴリ</a>
+      <a href="submit.html">投稿</a>
+    </nav>
+  </header>
+  <main>
+    <section class="highlight">
+      <h2>特集論文</h2>
+      <p><strong>シリーズ #1:</strong> Electron Model and Energy Topology<br>
+      閉曲面拡散により電子の構造を再定義し、波動性と場を統一的に記述。</p>
+      <p><a href="series1.html">→ 論文を読む</a></p>
+    </section>
 
-    <h2>公開中のページ</h2>
-    <ul>
-        <li><a href="index.html">トップページ（index.html）</a></li>
-        <li><a href="about.html">設立趣意書（about.html）</a></li>
-        <li><a href="papers.html">論文一覧（papers.html）</a></li>
-        <li><a href="series.html">シリーズ紹介（series.html）</a></li>
-        <li><a href="guidelines.html">投稿ガイドライン（guidelines.html）</a></li>
-    </ul><li><a href="submit.html">投稿フォーム</a></li> 
-    <li><a href="category_index.html">📚 カテゴリ別論文一覧</a></li>
-　　 <li><a href="category_physics.html">🔭 物理</a></li>
-    <li><a href="category_linguistics.html">🗣 言語</a></li>
-    <li><a href="category_economics.html">💹 経済</a></li>
-
-
+    <section class="categories">
+      <h2>カテゴリ別に論文を探す</h2>
+      <div class="grid">
+        <a href="category_physics.html">🔭 物理</a>
+        <a href="category_linguistics.html">🗣 言語</a>
+        <a href="category_economics.html">💹 経済</a>
+        <a href="category_chemistry.html">⚗️ 化学</a>
+        <a href="category_literature.html">🌐 文学</a>
+        <a href="category_mathematics.html">＝ 数学</a>
+        <a href="category_geoscience.html">🌋 地質学</a>
+        <a href="category_philosophy.html">⚖️ 哲学</a>
+        <a href="category_medicine.html">⚕️ 医学</a>
+        <a href="category_biology.html">🧬 生物学</a>
+        <a href="category_engineering.html">🛠️ 工学</a>
+        <a href="category_psychology.html">🧠 心理学</a>
+        <a href="category_history.html">🏛️ 歴史</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
